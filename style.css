@@ -1,0 +1,494 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.hero-header {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.user-pill {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 6px 4px 12px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-pill .chevron {
+    font-size: 12px;
+    color: #888;
+    transform: rotate(-90deg);
+    display: inline-block;
+}
+
+.user-pill img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.hero-image {
+    height: 520px;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    border-radius: 0;
+}
+
+.hero-card {
+    position: absolute;
+    bottom: -80px;
+    left: 30px;
+    background: #ffffff;
+    padding: 50px 45px;
+    max-width: 520px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 0;
+    z-index: 5;
+}
+
+.hero-card h1 {
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.hero-card h1 .highlight {
+    color: #f77f68;
+}
+
+.hero-card p {
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn-hero {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f77f68;
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.btn-hero img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+/* Services Section */
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 80px 0;
+}
+
+.service-card {
+    text-align: left;
+    background: transparent;
+    padding: 0;
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.service-card p {
+    color: #777;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.service-card a {
+    color: #ff7a60;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
+/* Facilities Section */
+.facilities {
+    margin: 80px 0;
+}
+
+.facilities h2 {
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #111;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.facility-card {
+    background: transparent;
+    padding: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.facility-card img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-bottom: 35px;
+}
+
+.facility-card h4 {
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.facility-card p {
+    color: #888;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.facility-card a {
+    color: #f77f68;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.facility-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* Sites Section */
+.sites {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    margin: 80px 0;
+}
+
+.sites-header {
+    flex: 1;
+    max-width: 320px;
+    padding-top: 10px;
+}
+
+.sites-header h2 {
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    line-height: 1.15;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.sites-header p {
+    color: #888;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.btn-sites {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #f77f68;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-sites img {
+    width: 12px;
+    height: 12px;
+    filter: brightness(0) invert(1);
+}
+
+.sites-grid {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.site-card {
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
+    position: relative;
+    display: block;
+}
+
+.site-img {
+    width: 100%;
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
+}
+
+.site-info {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    color: #333;
+    padding: 15px 0 0 0;
+}
+
+.site-info h3 {
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.site-info p {
+    color: #888;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.site-info a {
+    color: #f77f68;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.site-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* Advantages Section */
+.advantages {
+    margin: 80px 0;
+}
+
+.advantages h2 {
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #111;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.advantage-card {
+    background: transparent;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.advantage-card img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-bottom: 35px;
+}
+
+.advantage-card h4 {
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.advantage-card p {
+    color: #888;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.advantage-link {
+    color: #f77f68;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: auto;
+}
+
+.advantage-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #f7f7f7;
+    padding: 60px 80px 30px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.footer-brand {
+    max-width: 250px;
+}
+
+.footer-brand h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-brand .tagline {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #111;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: #000;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-legal a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-legal a:hover {
+    color: #000;
+}
